@@ -46,7 +46,13 @@ class _TabScreenState extends State<TabsScreen> {
     });
   }
 
-  void _setScreen(String identifier) {}
+  void _setScreen(String identifier) {
+    if (identifier == 'filters') {
+    } else {
+      Navigator.of(context).pop();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Widget activePage = CategoriesScreen(
