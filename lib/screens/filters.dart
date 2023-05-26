@@ -102,7 +102,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
               value: _vegetarianFilterSet,
               onChanged: (isChecked) {
                 setState(() {
-                  _veganFilterSet = isChecked;
+                  _vegetarianFilterSet = isChecked;
                 });
               },
               title: Text(
